@@ -1,0 +1,48 @@
+:root {
+    --White: white;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+.button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+.body {
+    background-color: #2A2C2F;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+.page {
+    padding: 45px 0 60px;
+    /* max-width: 880px; */
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.header__container {
+    background-color: blueviolet;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 1240px;
+}
