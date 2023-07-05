@@ -207,10 +207,10 @@ function Main() {
 
                     <div className="contact__container">
                         <div className="contact__buttons">
-                            <button onclick="blankUrl('https://wa.me/79363142131')" className="button contact__button-wa"
+                            <button className="button contact__button-wa"
                                 type="button">Написать в
                                 WhatsApp</button>
-                            <button onclick="blankUrl('https://t.me/wild_aleksander')" className="button contact__button-tg"
+                            <button className="button contact__button-tg"
                                 type="button">Написать в
                                 Telegram</button>
                         </div>

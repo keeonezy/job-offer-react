@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/icon/logo.svg"
 
-function Header() {
+function Header({ onContactsPopup }) {
     return (
         <div className="header__container">
             <header className="header">
@@ -30,7 +30,7 @@ function Header() {
                 </nav>
 
                 <div className="header__container-button">
-                    <button id="popupContact" className="button header__button button__contact-open" type="button">Написать
+                    <button id="popupContact" className="button header__button button__contact-open" type="button" onClick={onContactsPopup}>Написать
                         мне</button>
                     <button className="header__burger" type="button"></button>
                 </div>
