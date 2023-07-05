@@ -3,16 +3,13 @@ import { Header } from "./Header";
 import { Main } from "./Main";
 import { Footer } from "./Footer";
 import { ContactsPopup } from "./ContactsPopup";
+import ReactGA from "react-ga4";
 
-// function closeAllPopups() {
-//   setIsAddPlacePopupOpen(false);
-//   setIsEditAvatarPopupOpen(false);
-//   setIsEditProfilePopupOpen(false);
-//   setIsEditDeletePopupOpen(false);
-//   setSelectedCard({});
-// }
+const TRACKING_ID = "G-LX6NP84ZKB"; // YOUR_OWN_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
+
   const [isContactsPopupOpen, setIsContactsPopupOpen] = React.useState(false);
 
   function handleContactsClick() {
