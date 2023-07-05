@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/job-offer-react/static/css/main.4fb46467.css",
-    "main.js": "/job-offer-react/static/js/main.576cb2dc.js",
+    "main.js": "/job-offer-react/static/js/main.7d7626ea.js",
     "static/js/787.b649587a.chunk.js": "/job-offer-react/static/js/787.b649587a.chunk.js",
     "static/media/Montserrat-Medium.ttf": "/job-offer-react/static/media/Montserrat-Medium.a281f04d4c8926e7dea1.ttf",
     "static/media/Montserrat-Bold.ttf": "/job-offer-react/static/media/Montserrat-Bold.d0ca82d8ca07ba209aee.ttf",
@@ -38,11 +38,11 @@
     "static/media/circle.svg": "/job-offer-react/static/media/circle.e691ac813a208f82d56adf5db6045284.svg",
     "static/media/popup-close.svg": "/job-offer-react/static/media/popup-close.6a06ba1276cd2efee7cd.svg",
     "main.4fb46467.css.map": "/job-offer-react/static/css/main.4fb46467.css.map",
-    "main.576cb2dc.js.map": "/job-offer-react/static/js/main.576cb2dc.js.map",
+    "main.7d7626ea.js.map": "/job-offer-react/static/js/main.7d7626ea.js.map",
     "787.b649587a.chunk.js.map": "/job-offer-react/static/js/787.b649587a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fb46467.css",
-    "static/js/main.576cb2dc.js"
+    "static/js/main.7d7626ea.js"
   ]
 }
