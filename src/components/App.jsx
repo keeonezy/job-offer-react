@@ -16,6 +16,10 @@ function App() {
     setIsContactsPopupOpen(true);
   }
 
+  function handlePopupsClose() {
+    setIsContactsPopupOpen(false);
+  }
+
   return (
     <div className="body">
       <div className="page">
@@ -28,7 +32,7 @@ function App() {
         <Footer
         />
 
-        <ContactsPopup isOpen={isContactsPopupOpen} />
+        <ContactsPopup isOpen={isContactsPopupOpen} onClose={handlePopupsClose} />
 
       </div>
     </div>

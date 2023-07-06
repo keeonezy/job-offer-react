@@ -80,7 +80,7 @@ function Main({ onContactsPopup }) {
                     <li className="skills__card">
                         <img src={react} alt="HTML5" className="skills__image" />
                         <h3 className="skills__subtitle">React</h3>
-                        <p className="skills__description">В процессе изучения</p>
+                        <p className="skills__description">Использование CRA (изучается еще)</p>
                     </li>
 
                     <li className="skills__card">

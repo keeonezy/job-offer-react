@@ -4,7 +4,7 @@ import React from "react";
 //     window.open(url, '_blank');
 // }
 
-function ContactsPopup({ isOpen }) {
+function ContactsPopup({ isOpen, onClose }) {
 
     const blankUrl = (url) => {
         window.open(url, '_blank');
@@ -13,7 +13,7 @@ function ContactsPopup({ isOpen }) {
     return (
         <div className={`popup popup__contact ${isOpen ? "popup_opened" : ""}`}>
             <div className="popup__group">
-                <button className="button popup__close" type="button" aria-label="Закрыть"></button>
+                <button className="button popup__close" type="button" aria-label="Закрыть" onClick={onClose}></button>
                 <h2 className="popup__title">Напишите мне</h2>
                 <button className="button popup__button-wg" type="button" onClick={() => blankUrl('https://wa.me/79363142131')}>Написать в
                     WhatsApp</button>
