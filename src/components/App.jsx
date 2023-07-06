@@ -5,14 +5,18 @@ import { Footer } from "./Footer";
 import { ContactsPopup } from "./ContactsPopup";
 import { Menu } from "./Menu";
 import ReactGA from "react-ga4";
-
-const TRACKING_ID = "G-LX6NP84ZKB"; // YOUR_OWN_TRACKING_ID
-ReactGA.initialize(TRACKING_ID);
+import { TabTittle } from "./TabTittleHelper";
+import { Helmet } from "react-helmet";
 
 function App() {
 
   const [isContactsPopupOpen, setIsContactsPopupOpen] = React.useState(false);
   const [isMenuOpen, setMenuOpen] = React.useState(false);
+
+  const TRACKING_ID = "G-LX6NP84ZKB"; // YOUR_OWN_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
+
+  // TabTittle('Офферное предложение на работу');
 
   function handleContactsClick() {
     setIsContactsPopupOpen(true);
@@ -28,7 +32,13 @@ function App() {
   }
 
   return (
+
     <div className="body">
+      {/* <Helmet>
+        <meta charSet="utf-8" />
+        <title>Офферное предложение на работу</title>
+      </Helmet> */}
+
       <div className="page">
         <Header
           onContactsPopup={handleContactsClick}

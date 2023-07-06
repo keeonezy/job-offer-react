@@ -25,6 +25,7 @@ import contact3 from "../images/icon/contact-3.svg";
 import cicrle from "../images/icon/circle.svg";
 
 function Main({ onContactsPopup }) {
+
     return (
         <main className="main">
 
