@@ -22,8 +22,11 @@ function App() {
         <Header
           onContactsPopup={handleContactsClick}
         />
-        <Main />
-        <Footer />
+        <Main
+          onContactsPopup={handleContactsClick}
+        />
+        <Footer
+        />
 
         <ContactsPopup isOpen={isContactsPopupOpen} />
 

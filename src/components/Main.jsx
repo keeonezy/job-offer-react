@@ -24,7 +24,7 @@ import contact1 from "../images/icon/contact-1.svg";
 import contact3 from "../images/icon/contact-3.svg";
 import cicrle from "../images/icon/circle.svg";
 
-function Main() {
+function Main({ onContactsPopup }) {
     return (
         <main className="main">
 
@@ -39,7 +39,7 @@ function Main() {
                     <div className="offer__content">
                         <h1 className="offer__title">Я являюсь <span>веб разработчиком</span></h1>
                         <p className="offer__description">Более подробнее читай ниже</p>
-                        <button id="popupContact" className="button offer__button button__contact-open" type="button">Написать
+                        <button id="popupContact" className="button offer__button button__contact-open" type="button" onClick={onContactsPopup}>Написать
                             мне</button>
                     </div>
 
@@ -208,10 +208,10 @@ function Main() {
                     <div className="contact__container">
                         <div className="contact__buttons">
                             <button className="button contact__button-wa"
-                                type="button">Написать в
+                                type="button" onClick={onContactsPopup}>Написать в
                                 WhatsApp</button>
                             <button className="button contact__button-tg"
-                                type="button">Написать в
+                                type="button" onClick={onContactsPopup}>Написать в
                                 Telegram</button>
                         </div>
 
