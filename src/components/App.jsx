@@ -16,7 +16,7 @@ function App() {
   const TRACKING_ID = "G-LX6NP84ZKB"; // YOUR_OWN_TRACKING_ID
   ReactGA.initialize(TRACKING_ID);
 
-  // TabTittle('Офферное предложение на работу');
+  TabTittle('Офферное предложение на работу');
 
   function handleContactsClick() {
     setIsContactsPopupOpen(true);
