@@ -1,4 +1,5 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 
 // function blankUrl(url) {
 //     window.open(url, '_blank');
@@ -10,8 +11,14 @@ function ContactsPopup({ isOpen, onClose }) {
         window.open(url, '_blank');
     };
 
+    const handleOutsideClick = (evt) => {
+        if (evt.target === evt.currentTarget) {
+            onClose()
+        }
+    };
+
     return (
-        <div className={`popup popup__contact ${isOpen ? "popup_opened" : ""}`}>
+        <div className={`popup popup__contact ${isOpen ? "popup_opened" : ""}`} onClick={handleOutsideClick}>
             <div className="popup__group">
                 <button className="button popup__close" type="button" aria-label="Закрыть" onClick={onClose}></button>
                 <h2 className="popup__title">Напишите мне</h2>
