@@ -17,6 +17,17 @@ function ContactsPopup({ isOpen, onClose }) {
         }
     };
 
+    useEffect(() => {
+        function handleEscapeKey(evt: KeyboardEvent) {
+            if (evt.key === 'Escape') {
+                onClose()
+            }
+        }
+
+        document.addEventListener('keydown', handleEscapeKey)
+        return () => document.removeEventListener('keydown', handleEscapeKey)
+    }, []);
+
     return (
         <div className={`popup popup__contact ${isOpen ? "popup_opened" : ""}`} onClick={handleOutsideClick}>
             <div className="popup__group">
