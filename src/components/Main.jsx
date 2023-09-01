@@ -243,8 +243,7 @@ function Main({ onContactsPopup }) {
 
                     <li className="contact__card1">
                         <h3 className="contact__subtitle">4. Обговаривается отдельно при длительном сотрудничестве</h3>
-                        <p className="contact__desc">Отпуск 2 раза в год по 2 недели каждый. Оплата во время него считается в 2
-                            раза ниже. В этом году с 31 июля по 05 августа, а так же с 14 по 18 августа без оплаты.</p>
+                        <p className="contact__desc">Отпуск 2 раза в год по 2 недели каждый</p>
                     </li>
                 </ul>
             </section>
